@@ -6,7 +6,7 @@ pokedex: main.cpp llist.h
 valgrind: pokedex
 	valgrind --leak-check=yes ./pokedex
 
-.PHONY: clean
+.PHONY: clean valgrind
 
 clean:
 	rm -f pokedex
